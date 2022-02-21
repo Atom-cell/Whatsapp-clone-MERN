@@ -6,16 +6,11 @@ import cors from "cors";
 const app = express();
 const port = process.env.PORT || 9000;
 
-const URL =
-  "mongodb+srv://admin:B3tB8Dz2EbLcoxrf@cluster0.knx1d.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const URL =;
 mongoose.connect(URL);
 
 const pusher = new Pusher({
-  appId: "1349841",
-  key: "f887fcd4495910a78761",
-  secret: "1f0146282461997a530b",
-  cluster: "ap2",
-  useTLS: true,
+  
 });
 
 const db = mongoose.connection;
