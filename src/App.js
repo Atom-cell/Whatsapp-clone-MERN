@@ -13,7 +13,7 @@ function App() {
     });
   }, []);
   React.useEffect(() => {
-    var pusher = new Pusher("f887fcd4495910a78761", {
+    var pusher = new Pusher("your key", {
       cluster: "ap2",
     });
 
